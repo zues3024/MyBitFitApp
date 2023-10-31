@@ -1,8 +1,8 @@
-# Android Project 5 - *BitFitApp*
+# Android Project 5 - *MyBitFitApp*
 
 Submitted by: **Jesus Rosas**
 
-**BitFitApp** is a health metrics app that allows users to track calories for food that is ingested 
+**MyBitFitApp** is a health metrics app that allows users to track calories for food that is ingested 
 
 Time spent: **20** hours spent in total
 
