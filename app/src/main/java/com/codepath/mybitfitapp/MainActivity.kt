@@ -44,16 +44,20 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.submitButton).setOnClickListener {
             val newFoodItem = newFoodItemInput.text.toString()
             val newFoodCalories = price.text.toString().toInt()
-            foodCounter++
+
             val newSubmission = DisplayFood(newFoodItem, newFoodCalories)
+            foodCounter = foodList.size
+            foodCounter++
             val food = FoodEntity(foodCounter, newFoodItem, newFoodCalories)
 
             foodList.add(newSubmission)
+
             newFoodItemInput.text.clear()
             price.text.clear()
             adapter.notifyItemInserted(foodList.size)
             foodList.let {
                 lifecycleScope.launch(IO) {
+
                     (application as BitFitApplication).db.foodDAO().insertOne(food)
 
                 }
