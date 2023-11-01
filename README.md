@@ -31,5 +31,5 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='MyFitBit.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='MyBitFit.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
